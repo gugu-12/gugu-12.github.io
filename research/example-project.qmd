@@ -1,0 +1,8 @@
+---
+title: "Example Project"
+description: "Brief description of the project."
+date: "2025-01-15"
+categories: [example]
+---
+
+Replace this with a description of your research project — what you're working on and why it matters.

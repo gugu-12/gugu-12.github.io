@@ -1,0 +1,21 @@
+---
+title: "CV"
+---
+
+## Education
+
+| Degree | Field | Institution | Year |
+|--------|-------|-------------|------|
+| B.S.   | Your Field | Your University | Expected 20XX |
+
+## Experience
+
+### Research Assistant — [Lab Name]
+*[University], [Start Date] – Present*
+
+- Brief description of your work
+
+## Skills
+
+- **Programming:** Python, MATLAB, etc.
+- **Tools:** Git, LaTeX, etc.
