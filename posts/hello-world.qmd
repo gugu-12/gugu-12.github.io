@@ -1,0 +1,10 @@
+---
+title: "Hello World"
+description: "My first blog post."
+date: "2025-02-12"
+categories: [getting-started]
+---
+
+This is a sample blog post. Replace it with your own content!
+
+You can write **bold**, *italic*, `inline code`, and add links like [this](https://quarto.org/).
