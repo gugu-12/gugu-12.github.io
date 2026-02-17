@@ -1,5 +1,5 @@
 ---
-title: "Your Name"
+title: "Chunyu Gu"
 image: images/profile.jpg
 about:
   template: trestles
@@ -8,29 +8,28 @@ about:
   links:
     - icon: github
       text: GitHub
-      href: https://github.com/YOURUSERNAME
+      href: https://github.com/gugu-12
     - icon: envelope
       text: Email
-      href: mailto:your.email@university.edu
+      href: mailto:gu.1204@buckeyemail.osu.edu
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com/in/YOURUSERNAME
+      href: https://linkedin.com/in/Chunyu Gu
 ---
 
 ## About Me
 
 <!-- REPLACE this section with your own bio -->
 
-I am a [your year] student in [your department] at [your university].
-I work in the [Lab Name] on [brief description of research].
+I am the second year student in mathmatics at The Ohio State University.
+I work in the Car Mobility lab on data collection and analysis.
 
 ## Research Interests
 
-- Interest 1
-- Interest 2
-- Interest 3
+- Machine learning
+- AI
 
 ## Education
 
-- **[Degree]** in [Field], [University], [Year (expected)]
+- **[Degree]** applied math, The Ohio State University, the second year
 - **[Degree]** in [Field], [University], [Year]

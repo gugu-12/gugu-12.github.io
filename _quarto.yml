@@ -3,9 +3,9 @@ project:
   output-dir: _site
 
 website:
-  title: "Your Name"                    # <-- CHANGE THIS
-  description: "Your short description" # <-- CHANGE THIS
-  site-url: https://YOURUSERNAME.github.io  # <-- CHANGE THIS
+  title: "Chunyu"                    # <-- CHANGE THIS
+  description: "applied math in OSU" # <-- CHANGE THIS
+  site-url: https://gugu-12.github.io  # <-- CHANGE THIS
 
   navbar:
     left:
@@ -19,9 +19,9 @@ website:
         text: Blog
     right:
       - icon: github
-        href: https://github.com/YOURUSERNAME  # <-- CHANGE THIS
+        href: https://github.com/gugu-12  # <-- CHANGE THIS
       - icon: envelope
-        href: mailto:your.email@university.edu  # <-- CHANGE THIS
+        href: mailto:gu.1204@buckeyemail.osu.edu  # <-- CHANGE THIS
 
   page-footer:
     center: |
