@@ -6,7 +6,7 @@ title: "CV"
 
 | Degree | Field | Institution | Year |
 |--------|-------|-------------|------|
-| B.S.   | Your Field | Your University | Expected 20XX |
+| B.S.   | applied math | The Ohio State University | Expected 2028 |
 
 ## Experience
 

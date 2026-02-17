@@ -3,9 +3,9 @@ project:
   output-dir: _site
 
 website:
-  title: "Chunyu Gu"                    # <-- 改成你的名字
-  description: "Applied Math at OSU"    # <-- 简短描述
-  site-url: https://gugu-12.github.io   # <-- 你的 GitHub Pages URL
+  title: "Chunyu Gu"                    
+  description: "Applied Math at OSU"    
+  site-url: https://gugu-12.github.io   
 
   navbar:
     left:
@@ -19,9 +19,9 @@ website:
         text: Blog
     right:
       - icon: github
-        href: https://github.com/gugu-12  # <-- 你的 GitHub 链接
+        href: https://github.com/gugu-12  
       - icon: envelope
-        href: mailto:gu.1204@buckeyemail.osu.edu  # <-- 你的邮箱
+        href: mailto:gu.1204@buckeyemail.osu.edu  
 
   page-footer:
     center: |
