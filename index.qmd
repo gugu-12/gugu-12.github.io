@@ -19,7 +19,7 @@ about:
 ## About Me
 
 I am the second year student in mathmatics at The Ohio State University.
-I work in the Car Mobility lab on data collection and analysis.
+I work in the Car lab on data collection and analysis.
 
 ## Research Interests
 
@@ -28,4 +28,4 @@ I work in the Car Mobility lab on data collection and analysis.
 
 ## Education
 
-- **[Degree]** applied math, The Ohio State University, the second year
+- **[B.S]** applied math, The Ohio State University, the second year
