@@ -1,4 +1,3 @@
----
 title: "Chunyu Gu"
 image: images/profile.jpg
 about:
@@ -19,8 +18,6 @@ about:
 
 ## About Me
 
-<!-- REPLACE this section with your own bio -->
-
 I am the second year student in mathmatics at The Ohio State University.
 I work in the Car Mobility lab on data collection and analysis.
 
@@ -32,4 +29,3 @@ I work in the Car Mobility lab on data collection and analysis.
 ## Education
 
 - **[Degree]** applied math, The Ohio State University, the second year
-- **[Degree]** in [Field], [University], [Year]

@@ -3,9 +3,9 @@ project:
   output-dir: _site
 
 website:
-  title: "Chunyu"                    # <-- CHANGE THIS
-  description: "applied math in OSU" # <-- CHANGE THIS
-  site-url: https://gugu-12.github.io  # <-- CHANGE THIS
+  title: "Chunyu Gu"                    # <-- 改成你的名字
+  description: "Applied Math at OSU"    # <-- 简短描述
+  site-url: https://gugu-12.github.io   # <-- 你的 GitHub Pages URL
 
   navbar:
     left:
@@ -19,13 +19,13 @@ website:
         text: Blog
     right:
       - icon: github
-        href: https://github.com/gugu-12  # <-- CHANGE THIS
+        href: https://github.com/gugu-12  # <-- 你的 GitHub 链接
       - icon: envelope
-        href: mailto:gu.1204@buckeyemail.osu.edu  # <-- CHANGE THIS
+        href: mailto:gu.1204@buckeyemail.osu.edu  # <-- 你的邮箱
 
   page-footer:
     center: |
-      Built with [Quarto](https://quarto.org/) · © 2025 Your Name
+      Built with [Quarto](https://quarto.org/) · © 2026 Chunyu Gu
 
 format:
   html:
