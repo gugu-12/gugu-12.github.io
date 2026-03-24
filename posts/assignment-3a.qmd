@@ -1,0 +1,40 @@
+---
+title: "Assignment 3a: Package Management Concepts"
+description: "Why virtual environments exist and how pip, conda, and uv compare."
+date: "2026-03-24"
+categories: [python, package-management, tools]
+---
+
+## Why Package Management Matters
+
+When you install a package, it brings its own dependencies. For example, installing `requests` actually installs 5 packages: certifi, charset-normalizer, idna, urllib3, and requests itself. This is called a dependency tree.
+
+The core problem is version conflicts — Project A might need numpy 1.26 while Project B needs numpy 2.0. Installing both into the same Python environment breaks one of them.
+
+## Virtual Environments
+
+A virtual environment gives each project its own isolated Python installation. I proved this by creating two environments with different numpy versions:
+```python
+# env-numpy1 had numpy 1.26.4
+# env-numpy2 had numpy 2.4.3
+# Both coexisted without conflict
+```
+
+## pip vs uv Speed Comparison
+
+I timed both package managers installing the same 4 packages:
+
+- **pip**: 5.766 seconds
+- **uv**: 1.627 seconds
+
+uv was nearly 4x faster! uv uses a SAT solver for dependency resolution and caches aggressively.
+
+## Requirements Files
+
+A requirements file pins exact versions so anyone can recreate the environment:
+```bash
+uv pip freeze > requirements.txt
+uv pip install -r requirements.txt
+```
+
+This ensures reproducibility — the same packages, same versions, every time.
