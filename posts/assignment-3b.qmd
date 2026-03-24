@@ -1,0 +1,37 @@
+---
+title: "Assignment 3b: Neural Network from Scratch"
+description: "Building a neural network using only numpy to understand what PyTorch does under the hood."
+date: "2026-03-25"
+categories: [neural-network, numpy, ml, python]
+---
+
+## Why Build from Scratch?
+
+Understanding what happens inside frameworks like PyTorch requires implementing the core components manually. In this assignment I built a neural network using only numpy.
+
+## Decision Tree vs Neural Network
+
+A decision tree creates blocky, axis-aligned boundaries. A neural network learns smooth, curved boundaries that follow the shape of the data — in this case, the moon-shaped dataset.
+
+## What I Implemented
+
+- **Sigmoid activation**: squashes values to (0, 1)
+- **Forward pass**: matrix multiplications through each layer
+- **Binary cross-entropy loss**: measures prediction error
+- **Backpropagation**: chain rule applied backward through layers
+- **Training loop**: forward → loss → backward → update weights
+
+## Hyperparameter Experiments
+
+| Hidden Size | Learning Rate | Behavior |
+|-------------|---------------|----------|
+| 4 | 0.5 | Simpler boundary, slight underfit |
+| 8 | 0.5 | Best balance (baseline) |
+| 16 | 0.5 | More complex boundary |
+| 8 | 0.1 | Slower convergence |
+
+## What PyTorch Adds
+
+When you call `loss.backward()` in PyTorch, it automatically computes gradients using the chain rule — exactly what my hand-written `backward()` function does, but automatically for any network architecture.
+
+The sklearn shortcut — `MLPClassifier` — achieved 0.856 accuracy in 4 lines, the same result as my from-scratch implementation.
