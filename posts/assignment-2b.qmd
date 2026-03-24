@@ -1,0 +1,27 @@
+---
+title: "Assignment 2b: Concepts, Admin & AI Setup"
+description: "Setting up databases, ML pipelines, and AI coding tools."
+date: "2026-03-24"
+categories: [sql, ml, tools, ai]
+---
+
+## Part 1: Database & SQL
+
+A database is better than CSV files because it supports efficient querying without loading entire files. It enforces data consistency and makes it easy to find specific experiments without manually searching through multiple files.
+
+JOIN would be useful in ML projects to link experiment runs to their datasets — for example, connecting a runs table to a datasets table to see which model was trained on which data.
+
+SQLite is ideal for small, single-user projects because it requires no server setup and works out of the box, unlike PostgreSQL which is better for large-scale or multi-user environments.
+
+## Part 2: ML Pipeline
+
+Splitting data before preprocessing prevents data leakage — if you normalize using the full dataset's statistics, test set information contaminates the training process, leading to overly optimistic results.
+
+Experiment tracking speeds up iteration by automatically logging every run's parameters and metrics, making it easy to compare results without relying on memory or manual notes.
+
+Model training benefits most from GPU acceleration because it involves massive matrix multiplications. Feature engineering with graph or image data can also benefit from GPU computation.
+
+## Tools Set Up
+- W&B account created and test run verified
+- GitHub Copilot activated
+- CLAUDE.md created in EDA project
