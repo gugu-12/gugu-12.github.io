@@ -1,0 +1,35 @@
+---
+title: "Assignment 2a: Exploratory Data Analysis - Survival IDS Dataset"
+description: "EDA and baseline ML models on the HCRL Survival IDS dataset for automotive intrusion detection."
+date: "2026-03-25"
+categories: [eda, python, machine-learning, cybersecurity]
+---
+
+## Dataset Overview
+
+The HCRL Survival IDS dataset contains CAN bus network traffic from a vehicle, with 149,547 rows and 12 columns including Timestamp, CAN_ID, DLC, 8 data bytes, and a Label column.
+
+- **R** (Normal): 109,931 records
+- **T** (Flooding Attack): 32,422 records
+
+## Key Findings
+
+The dataset has no missing values in critical columns. The Label column shows a class imbalance — about 77% normal traffic and 23% attack traffic.
+
+## Visualizations
+
+Three EDA plots were created:
+
+1. **DLC Distribution**: Most packets have DLC value of 8
+2. **Class Distribution**: Clear imbalance between normal and attack traffic
+3. **Timestamp Distribution**: Traffic is evenly distributed over time
+
+## ML Models
+
+
+Both models achieved perfect accuracy because the CAN_ID feature alone is highly discriminative — flooding attacks use distinct CAN IDs that don't appear in normal traffic.
+
+## Graph Gallery Plots
+
+- **Violin Plot**: Shows DLC value distribution differs between normal and attack traffic
+- **Box Plot**: Shows CAN ID numeric values are clearly separated between classes
