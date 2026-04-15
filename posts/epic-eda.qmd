@@ -1,0 +1,45 @@
+---
+title: "EPIC Dataset — Exploratory Data Analysis"
+description: "EDA of the EPIC (Electric Power and Intelligent Control) ICS/SCADA dataset from iTrust SUTD."
+date: "2026-04-15"
+categories: [eda, python, ics, graphids]
+---
+
+## Dataset Overview
+
+The EPIC dataset contains sensor and actuator data collected from the EPIC testbed at iTrust, Singapore University of Technology and Design (SUTD). It monitors an electric power microgrid system with generators, smart home loads, and transmission lines.
+
+- **Source:** iTrust, SUTD — https://itrust.sutd.edu.sg/testbeds/electric-power-and-intelligent-control-epic/
+- **File analyzed:** Scenario 1 (normal operation, Oct 19 2018)
+- **Size:** 512 rows × 292 columns
+- **Sampling rate:** ~1 second intervals over 10 minutes
+
+## Column Structure
+
+| Category | Count | Examples |
+|----------|-------|---------|
+| Numeric (Float64) | 154 | Voltage, Current, Power, Frequency |
+| Boolean | 122 | Circuit breaker open/close/trip status |
+| String | 16 | Timestamp, breaker status codes |
+
+## Key Findings
+
+- **No missing values** — data quality is excellent across all 292 columns
+- **6 duplicate rows** found and removed in cleaned dataset
+- **105 two-second gaps** in timeline — sensor occasionally missed one reading per cycle
+- **Generator G2 inactive** in Scenario 1 — all GIED2 columns are zero
+- **Power ramp-up** visible at 14:45 — G1 synchronizes and jumps from ~600W to ~4500W
+- **Reactive power** strongly negatively correlated with real power (r ≈ -1)
+- **Voltage V1** remains stable and uncorrelated with other sensors throughout
+
+## Visualizations
+
+Three charts were created during EDA:
+
+1. **G1 Real Power Distribution** — bimodal histogram showing startup phase vs stable operation
+2. **G1 Power over Time** — time series showing sharp ramp-up at synchronization
+3. **Sensor Correlation Heatmap** — 8 key sensors showing power/current correlation structure
+
+## Notes
+
+Scenario 1 contains only normal operation data with no attack labels. Attack scenarios are available in separate files (Oct 2021 dataset) currently being uploaded by the lab.
