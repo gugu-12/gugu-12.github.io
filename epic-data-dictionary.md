@@ -130,10 +130,3 @@ Motor speed controllers. VSD1 and VSD2 are active in Scenario 1.
 | Stop_Flag | Boolean | — | Stop sequence in progress |
 
 ---
-
-## Open Questions
-
-- What do the attack scenarios look like? (Oct 2021 data pending upload)
-- Why does VSD2.ActualSpeed go up to 13107 RPM while VSD1 only reaches 1505?
-- What triggers the Sync_Neut_Angle_Diff to change — is this the synchronization process?
-- Which circuit breaker configurations change during an attack?
