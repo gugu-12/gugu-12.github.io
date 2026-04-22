@@ -37,13 +37,10 @@ Measurements from the Intelligent Electronic Device (IED) monitoring Generator 1
 
 ---
 
-## 3. Generation — GIED2 (Generator 2, Inactive in Scenario 1)
-
-Same columns as GIED1 but all values = 0 in Scenario 1. G2 is not running.
 
 ---
 
-## 4. Generation — Circuit Breakers (Q1, Q1A, Q1_1, Q1_2)
+## 3. Generation — Circuit Breakers (Q1, Q1A, Q1_1, Q1_2)
 
 Boolean status columns for each circuit breaker in the generation subsystem.
 
@@ -61,7 +58,7 @@ Boolean status columns for each circuit breaker in the generation subsystem.
 
 ---
 
-## 5. MicroGrid — MIED1 & MIED2
+## 4. MicroGrid — MIED1 & MIED2
 
 Monitoring points in the microgrid. Partially active in Scenario 1 (voltage present but no current/power).
 
@@ -82,21 +79,8 @@ Monitoring points in the microgrid. Partially active in Scenario 1 (voltage pres
 
 ---
 
-## 6. SmartHome — SIED1, SIED2, SIED3, SIED4
 
-Four smart home load monitoring points. All values = 0 in Scenario 1 (no smart home load connected).
-
-Same measurement columns as GIED1 (Apparent, Frequency, L1-3 Current, Power Factor, Reactive, Real, V1-3, VL1_L2, VL2_L3, VL3_VL1).
-
----
-
-## 7. SmartHome — Circuit Breakers (Q3_1, Q3_2, Q3_3, Q3_4)
-
-Same boolean structure as Generation circuit breakers (MODE_CLOSE, MODE_OPEN, MODE_STATUS, STATUS, STATUS_CLOSE, STATUS_OPEN, TRIP).
-
----
-
-## 8. Transmission — TIED1, TIED2, TIED4
+## 5. Transmission — TIED1, TIED2, TIED4
 
 Transmission line monitoring points. Mostly 0 in Scenario 1 except TIED4 voltage.
 
@@ -109,7 +93,7 @@ Transmission line monitoring points. Mostly 0 in Scenario 1 except TIED4 voltage
 
 ---
 
-## 9. VSD — Variable Speed Drives (VSD1, VSD2, VSD3)
+## 6. VSD — Variable Speed Drives (VSD1, VSD2, VSD3)
 
 Motor speed controllers. VSD1 and VSD2 are active in Scenario 1.
 
