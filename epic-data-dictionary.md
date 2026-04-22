@@ -11,6 +11,9 @@
 | Column | Type | Description |
 |--------|------|-------------|
 | Timestamp | String → datetime | Recording time, format MM/DD/YYYY HH:MM:SS, ~1 second intervals |
+numeric_cols：154
+string : 16
+bool :122
 
 ---
 
